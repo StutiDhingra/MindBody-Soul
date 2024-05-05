@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2 class="text-center">Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#loginForm').on('submit', function(e) {
+    e.preventDefault();
+    var username = $('#username').val().trim();
+    var password = $('#password').val().trim();
+    if (username === '' || password === '') {
+      alert('Both fields are required.');
+      return;
+    }
+    // Perform AJAX request to your Node.js server's login endpoint
+    $.ajax({
+      url: '/login', // The endpoint of your Node.js server
+      type: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify({ username: username, password: password }),
+      success: function(response) {
+        // Handle success - perhaps redirect to another page
+      },
+      error: function(error) {
+        // Handle error
+        alert('Invalid credentials.');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

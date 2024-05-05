@@ -1,0 +1,261 @@
+body {
+    font-family:'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #B5C0D0;
+  }
+  .container {
+    width: 50%;
+    height:560px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .progress-bar {
+    width: 100%;
+    margin-top: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .progress-bar .progress {
+    width: 0%;
+    height: 100%;
+    background-color: #d33f8d;
+    position: absolute;
+    transition: width 0.5s ease;
+  }
+  .page {
+    display: none;
+    text-align: left;
+  }
+  .page.active {
+    display: block;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #d33f8d;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-container{
+    position:fixed;
+    bottom:100px;
+    left:650px;
+
+  }
+  .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width:100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 60px;
+
+
+
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+        height:auto;
+    }
+    /* Styles for patient rectangles */
+    .patient {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #addMemberButton{
+        margin-top: 20px;
+        color: #d33f8d;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #submitButton{
+        margin-bottom:10px;
+        background-color: #d33f8d;
+        color:white;
+        border: none;
+        padding:4px 10px;
+        font-size:18px;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer; 
+    }
+    .label{
+        font-size: 20px;
+    }
+    .inputbox{
+        font-size:17px;
+        width:420px;
+        height:35px;
+        margin-top:5px;
+    }
+    .options {
+    display: flex;
+  }
+
+  .option {
+    padding: 10px 20px;
+    border: 2px solid #777777;
+    border-radius: 5px  ;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: #d3d3d3;
+    color:#414141;
+    
+  }
+
+  .option:hover {
+    background-color: #d3d3d3;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #fff;
+    border: 2px solid #d33f8d;
+    color:#000;
+
+  }
+  .symptoms {
+    margin-bottom: 20px;
+  }
+
+  .symptom {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+
+  .symptom .remove {
+    color: #d33f8d;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .suggested-symptoms {
+    margin-top: 20px;
+  }
+
+  .suggested-symptom {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    border-color: #d33f8d; /* Change border color to desired color */
+}
+#addSymptom{
+    margin-bottom:10px;
+    background-color: #d33f8d;
+    color:white;
+    border: none;
+    padding:4px 10px;
+    font-size:15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+#inputSymptom{
+    font-size:15px;
+    width:220px;
+    height:25px;
+}
+.scrollable-options {
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .or-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 10%; 
+    position:relative;
+    top:150px;
+    color:#414141;
+
+  }
+  .creditcard{
+    
+    margin-left: 30px;
+  }
+  .upi{
+    position: relative;
+    top:70px;
+  }
+  .creditcard, .upi {
+    width: 40%;
+  }
+  .creditcard, .or-text, .upi {
+    display: inline-block;
+    vertical-align: top; 
+
+  }
+  

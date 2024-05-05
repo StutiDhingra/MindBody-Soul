@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mentalhealth2.css">
+    <script type="text/javascript" src="mentalhealth2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+        <div class="heading">
+          <nav class="navigation">
+            <div id="banner">
+            <!--logo-->
+            <a href="#" class="logo"><h3 id="mbs">MindBody&Soul</h3>
+              <!--menu-->
+              <ul class="menu">
+                  <li><a href="finddoc2.html">Find a Doctor</a></li>
+                  <li><a href="index.html#our-story">About Us</a></li>
+                  <li><a href="index.html#team">Our Specialists</a></li>
+                  <li><a href="index.html#our-services">Our Services</a></li>
+                  <li><a href="index.html#why-choose-us">Contact Us</a></li>
+              </ul>
+          </nav>
+            <div id="h1">
+                <h1>Convenient and affordable therapy <br>with MindBody&Soul.</h1>
+            </div>
+            <div id="h2">
+                <h6>MindBody&Soul will match you to one of 35,000 licensed therapists based upon your location, preferences, and therapist availability.
+                </h6>
+            </div>
+        </div>
+
+        <div id="quiz">
+            <form id="quizform">
+
+                <div class="helpquote">
+                    <h4>Help us match you to the right therapist.</h4>
+                  </div>
+      
+
+              <div id="question1" class="ques">
+                <p class="q">1. What type of therapy are you looking for?</p>
+                <div class="form-radio">
+                  <input type="radio" name="therapyType" class="radiobtn" id="individual" value="Individual">
+                  <label for="individual">Individual (for myself)</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="therapyType" class="radiobtn" id="couples" value="Couples">
+                  <label for="couples">Couples (for myself and my partner)</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="therapyType" class="radiobtn" id="teen" value="Teen">
+                  <label for="teen">Teen (for my child)</label>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn" onclick="showQuestion(2)">Next</button>
+                </div>
+              </div>
+      
+      
+              <div id="question2" class="ques" style="display: none;">
+                <p class="q">2. What is your gender identity?</p>
+                <div class="form-radio">
+                  <input type="radio" name="genderIdentity"class="radiobtn" id="woman" value="Woman">
+                  <label for="woman">Woman</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="genderIdentity" class="radiobtn" id="man" value="Man">
+                  <label for="man">Man</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="genderIdentity" class="radiobtn" id="nonBinary" value="Non-binary">
+                  <label for="nonBinary">Non-binary</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="genderIdentity" class="radiobtn" id="otherGender" value="Other">
+                  <label for="otherGender">Other</label>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn" onclick="showQuestion(3)">Next</button>
+                </div>
+              </div>
+      
+      
+              <div id="question3" class="ques" style="display: none;">
+                  <p class="q">3. How old are you?</p>
+                  <input type="number" class="form-age" name="age" id="age" placeholder="Enter your age">
+                  <div class="btn-container">
+                      <button type="button" class="btn" onclick="showQuestion(4)">Next</button>
+                    </div>        
+            </div>
+      
+              <div id="question4" class="ques" style="display: none;">
+                  <p class="q">4. Have you ever been in therapy before?</p>
+                  <div class="form-radio">
+                      <input type="radio" name="priorTherapy" class="radiobtn" id="priorTherapyYes" value="yes">
+                      <label for="priorTherapyYes">Yes</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="priorTherapy" class="radiobtn" id="priorTherapyNo" value="no">
+                      <label for="priorTherapyNo">No</label>
+                    </div>
+                    <div class="btn-container">
+                      <button type="button" class="btn" onclick="showQuestion(5)">Next</button>
+                    </div>
+              </div>
+      
+      
+              <div id="question5" class="ques" style="display: none;">
+                  <p class="q">5. How would you rate your current sleeping habits?</p>
+                  <div class="form-radio">
+                    <input type="radio" name="sleepingHabits" class="radiobtn" id="good" value="Good">
+                    <label for="good">Good</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="sleepingHabits" class="radiobtn" id="fair" value="Fair">
+                    <label for="fair">Fair</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="sleepingHabits" class="radiobtn" id="poor" value="Poor">
+                    <label for="poor">Poor</label>
+                  </div>
+                  <div class="btn-container">
+                      <button type="button" class="btn mt-3" onclick="showQuestion(6)">Next</button>
+                    </div>
+                </div>
+      
+      
+                <div id="question6" class="ques" style="display: none;">
+                  <p class="q">6. How would you rate your current eating habits?</p>
+                  <div class="form-radio">
+                    <input type="radio" name="eatingHabits"class="radiobtn" id="good" value="Good">
+                    <label for="good">Good</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="eatingHabits" class="radiobtn"id="fair" value="Fair">
+                    <label for="fair">Fair</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="eatingHabits" class="radiobtn"id="poor" value="Poor">
+                    <label for="poor">Poor</label>
+                  </div>
+                  <div class="btn-container">
+                      <button type="button" class="btn mt-3" onclick="showQuestion(7)">Next</button>
+                    </div>
+                </div>
+      
+      
+                <div id="question7" class="ques" style="display: none;">
+                  <p class="q">7. How would you rate your current physical health?</p>
+                  <div class="form-radio">
+                      <input type="radio" name="physicalHealth" class="radiobtn"id="physicalHealthGood" value="Good">
+                      <label for="physicalHealthGood">Good</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="physicalHealth" class="radiobtn"id="physicalHealthFair" value="Fair">
+                      <label for="physicalHealthFair">Fair</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="physicalHealth"class="radiobtn" id="physicalHealthPoor" value="Poor">
+                      <label for="physicalHealthPoor">Poor</label>
+                    </div>
+                    <div class="btn-container">
+                      <button type="button" class="btn mt-3" onclick="showQuestion(8)">Next</button>
+                    </div>
+              </div>
+      
+      
+              <div id="question8" class="ques" style="display: none;">
+                  <p class="q">8. What led you to consider therapy today?</p>
+                  <div class="form-check">
+                    <input type="checkbox" name="reasons[]" id="feelingDepressed" value="feelingDepressed">
+                    <label for="feelingDepressed">I've been feeling depressed</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" name="reasons[]" id="feelingAnxious" value="feelingAnxious">
+                    <label for="feelingAnxious">I feel anxious or overwhelmed</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" name="reasons[]" id="moodInterfering" value="moodInterfering">
+                    <label for="moodInterfering">My mood is interfering with my job/school performance</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="relationshipStruggle" value="relationshipStruggle">
+                      <label for="relationshipStruggle">I struggle with building or maintaining relationships</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="lifeMeaning" value="lifeMeaning">
+                      <label for="lifeMeaning">I can't find purpose and meaning in my life</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="grieving" value="grieving">
+                      <label for="grieving">I am grieving</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="experiencedTrauma" value="experiencedTrauma">
+                      <label for="experiencedTrauma">I have experienced trauma</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="gainConfidence" value="gainConfidence">
+                      <label for="gainConfidence">I want to gain self confidence</label>
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" name="reasons[]" id="other" value="other">
+                      <label for="other">Other</label>
+                  </div>
+                  <div class="btn-container">
+                      <button type="button" class="btn" onclick="showResults()">Search</button>
+      
+                  </div>
+              </div>
+
+            </form>
+          </div>
+          
+          <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+          <div class="featured">
+            <div id="fi">
+              <h4>Featured in</h4>
+            </div>
+            <div class="fiimg" id="fi1"> 
+              <img src="imgs/nyt.svg">
+            </div>
+            <div class="fiimg" id="fi2"> 
+              <img src="imgs/wallstreeetjournal.svg">
+            </div>
+            <div class="fiimg" id="fi3"> 
+              <img src="imgs/foxnews.svg">
+            </div>
+            <div class="fiimg" id="fi4"> 
+              <img src="imgs/chicagotribune.svg">
+            </div>
+          </div>
+
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="review">
+                <p>"Susan is amazing in her insights and conversational approach. I am so glad and blessed to have found her and started healing with her guidance."</p>
+              </div>
+              <div class="reviewer">
+                <p>Written by S.A. for Susan Hargett</p>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="review">
+                <p>"I can actually see progress in my mental health which is something I haven't been able to say in 15 years and it's thanks to her."</p>
+              </div>
+              <div class="reviewer">
+                <p>Written by S.A. for Virginia Truglio</p>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="review">
+                <p>"Michelle listens and provides excellent guidance through life's situations."</p>
+              </div>
+              <div class="reviewer">
+                <p>Written by S.A. for Michelle Wilkinson</p>
+              </div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Dot container -->
+            <div class="dot-container" style="text-align:center">
+              <!-- The dots/circles -->
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+          <div class="successstories">
+            <button class="storiesbtn" onclick="openStories()">More Success Stories</button>
+          </div>
+
+          <div class="box-container">
+            <div class="box1">
+              <img src="imgs/prof.svg" class="boximg">
+              <h3>It's<br><span id="boxtitle">Professional.</span></h3>
+              <p>All therapists are licensed,<br>accredited professionals.<br>MindBody&Soul allows you to connect<br>with them in a safe and convenient<br>online environment.
+              </p>
+            </div>
+            <div class="box2">
+              <img src="imgs/affo.svg" class="boximg">
+              <h3>It's<br><span id="boxtitle">Affordable.</span></h3>
+              <p>Pay a low flat fee for both live<br>sessions as well as messaging with<br>your therapist. Therapy doesn't<br>have to be expensive.
+              </p>
+            </div>
+            <div class="box3">
+              <img src="imgs/conv.svg" class="boximg">
+              <h3>It's<br><span id="boxtitle">Convenient.</span></h3>
+              <p>Do it at your own time and at your<br>own pace. Communicate with your<br>therapist as often as you want and<br>whenever you feel it's needed.
+              </p>
+            </div>
+            <div class="box4">
+              <img src="imgs/effec.svg" class="boximg">
+              <h3>It's<br><span id="boxtitle">Effective.</span></h3>
+              <p>Thousands of people have<br>benefited from therapy <br>with MindBody&Soul,<br>you can switch therapists at any<br>point if you don't feel you are<br>getting enough benefit.
+              </p>
+            </div>
+          </div>
+
+    </div>
+    
+</body>
+</html>

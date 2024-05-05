@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBodySoul</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--imorting font from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body>
+    <section id="hero">
+    <nav class="navigation">
+      <!--MENU-BTN-->
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <!--logo-->
+        <a href="#" class="logo"><h3 id="lg">MindBody&Soul</h3>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="finddoc2.html">Find a Doctor</a></li>
+            <li><a href="#our-story">About Us</a></li>
+            <li><a href="#team">Our Specialists</a></li>
+            <li><a href="#our-services">Our Services</a></li>
+            <li><a href="#why-choose-us">Contact Us</a></li>
+        </ul>
+        <Appointment-button>
+        <div class="container">
+            <button type="button" class="btn-btn-info-btn-round" data-toggle="modal" data-target="#loginModal">
+              Login
+            </button>  
+          </div></Appointment-button>
+    </nav>
+    <!--CONTENT-->
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Feel better About Finding HealthCare</h1>
+            <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends. 
+                 MindBodySoul believes in providing affordable access to quality healthcare and helps patients pick the best surgery option for their health condition.
+                </p>
+                <div class="hero-text-btns">
+                <a href="finddoc2.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Find Doctor</a>
+                <a href="#">
+                    <i class="fa-solid fa-check"></i>
+                    Book Appointment</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="img4.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!--SEARCH-->
+<div class="appointment-search-container">
+    <h3>Find Best HealthCare</h3>
+    <div class="appointment-search">
+        <div class="appo-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Doctor Here">
+        </div>
+        <div class="appo-search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Set Your Location">
+        </div>
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+</div>
+<section class="what-we-provide">
+    <!--BOX1-->
+    <div class="w-info-box w-info-box1">
+        <div class="w-info-icon">
+            <i class="fa-solid fa-capsules"></i>
+        </div>
+        <div class="w-info-text">
+            <strong>Specialised Service</strong>
+            <p>We provide Specialised servives</p>
+        </div>
+    </div>
+    <!--BOX2-->
+    <div class="w-info-box w-info-box2">
+        <div class="w-info-icon">
+            <i class="fa-regular fa-comment"></i>
+        </div>
+        <div class="w-info-text">
+            <strong>24/7 Advanced Care</strong>
+            <p>We provide 24/7 Advanced Care</p>
+        </div>
+    </div>
+    <!--BOX3-->
+    <div class="w-info-box w-info-box3">
+        <div class="w-info-icon">
+            <i class="fa-solid fa-square-poll-horizontal"></i>
+        </div>
+        <div class="w-info-text">
+            <strong>Get Result Onine</strong>
+            <p>We provide results online</p>
+        </div>
+    </div>
+</section>
+
+<!--OUR STORY-->
+<section id="our-story">
+    <div class="our-story-img">
+        <img src="img2.jpeg" alt="">
+    <!--video-play-btn-->
+        <a href="#" class="story-play-btn">
+            <i class="fa-solid fa-play"></i>
+            Play Video
+        </a>
+    </div>
+    <div class="our-story-text">
+        <h2>Short Story About Our Website</h2>
+        <p>MindBodySoul is an online clincal resource for
+             medical knowledge and decision support that 
+             is trusted by over 2 million medical professionals world-wide. More than 7,300 physician authors, editors and reviewers use a rigorous editorial process to synthesize the most recent medical findings into trusted, evidence-based content and recommendations 
+            that can be acted on at the point of care.</p>
+        <p>MindBodySoul is an online clincal resource for
+            medical knowledge and decision support that 
+            is trusted by over 2 million medical professionals.</p>
+            <div class="story-number-container">
+                <!--BOX1-->
+                <div class="story-number-box s-n-box1">
+                    <strong>1000+</strong>
+                    <span>Happy Patients</span>
+                </div>
+                <!--BOX2-->
+                <div class="story-number-box s-n-box2">
+                    <strong>215+</strong>
+                    <span>Expert Doctors</span>
+                </div>
+                <!--BOX3-->
+                <div class="story-number-box s-n-box3">
+                    <strong>310+</strong>
+                    <span>Hospital Rooms</span>
+                </div>
+                <!--BOX4-->
+                <div class="story-number-box s-n-box4">
+                    <strong>106+</strong>
+                    <span>Award Winning</span>
+                </div>
+            </div>
+    </div>
+</section><!--STORY END-->
+<!--OUR SERVIVESS-->
+
+<section id="our-services">
+    <!--**heading***-->
+    <div class="services-heading">
+        <div class="services-heading-text">
+            <strong>Our Services</strong>
+            <h2>High Quality Services For You</h2>
+        </div>
+        <div class="services-slide-btns">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!--BOX CONTAINER-->
+    <div class="services-box-container">
+        <!-- Swiper -->
+        <div class="swiper mySwiperservices">
+        <div class="swiper-wrapper">
+
+            <!--SLIDE1-->
+        <div class="swiper-slide">
+            <div class="service-box s-box1">
+                <img src="img3.jpeg" alt="">
+                <strong>MENTAL HEALTH</strong>
+                <p>We care about your mental health</p>
+                <a href="mentalhealth2.html">Read More</a>
+            </div>
+        </div>
+        <!--SLIDE2-->
+        <div class="swiper-slide">
+            <div class="service-box s-box2">
+                <i class="fa-solid fa-calendar-check"></i>
+                <strong>BOOK APPOINTMENTS</strong>
+                <p>We care about your mental health</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <!--SLIDE3-->
+        <div class="swiper-slide">
+            <div class="service-box s-box3">
+                <i class="fa-solid fa-vials"></i>
+                <strong>BOOK TESTS ONLINE</strong>
+                <p>We care about your mental health</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <!--SLIDE4-->
+        <div class="swiper-slide">
+            <div class="service-box s-box4">
+                <i class="fa-solid fa-newspaper"></i>  
+                <strong>EXPLORE ARTICLES</strong>
+                <p>We care about your mental health</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div><!--WRAPPER END-->
+    </div><!--SWIPER END-->
+
+    </div><!--CONTAINER END-->
+
+    <!--btn-->
+    <span class="service-help-btn">Contact Us For Need Any Help And Services<a href="#">Let's Get Started</a></span>
+</section><!--SERVICES END-->
+
+
+<!--WHY CHOOSE US-->
+<section id="why-choose-us">
+  <!--LEFT-->
+  <div class="why-choose-us-left">
+    <h3>Why Choose Us?</h3>
+    <!--CONTAINER-->
+    <div class="why-choose-box-container">
+      <!--BOX-->
+      <div class="why-choose-box">
+        <!--ICON-->
+        <i class="fa-solid fa-check"></i>
+        <!--text-->
+        <div class="why-choose-box-text">
+          <strong>Advance Care</strong>
+          <p>We give Advance Care</p>
+        </div>
+      </div>
+      <!--BOX-->
+      <div class="why-choose-box">
+        <!--ICON-->
+        <i class="fa-solid fa-check"></i>
+        <!--text-->
+        <div class="why-choose-box-text">
+          <strong>Easy Access</strong>
+          <p>We give Easy Access</p>
+        </div>
+      </div>
+      <!--BOX-->
+      <div class="why-choose-box">
+        <!--ICON-->
+        <i class="fa-solid fa-check"></i>
+        <!--text-->
+        <div class="why-choose-box-text">
+          <strong>Affordable Treatment</strong>
+          <p>We provide Affordable Treatment</p>
+        </div>
+      </div>
+      <!--BOX-->
+      <div class="why-choose-box">
+        <!--ICON-->
+        <i class="fa-solid fa-check"></i>
+        <!--text-->
+        <div class="why-choose-box-text">
+          <strong>Efficient Service</strong>
+          <p>We provide Efficient Service</p>
+        </div>
+      </div>
+    </div><!--CONTAINER END-->
+
+    <!--BTNS-->
+    <a href="finddoc2.html" class="why-choose-us-btn">Make Appointment</a>
+  </div><!--LEFT END-->
+  <!--RIGHT-->
+  <div class="why-choose-us-right">
+    <h3>
+      Emergency?<br/>
+      Contact Us
+    </h3>
+    <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends. </p>
+    <!--CONTAINER-->
+    <div class="w-right-contact-container">
+      <!--BOX-->
+      <div class="w-right-contact-box">
+        <!--ICON-->
+        <i class="fa-solid fa-phone"></i>
+        <!--TEXT-->
+        <div class="w-right-contact-box-text">
+          <span>Call Us Now</span>
+          <strong>+123 456 789</strong>
+      </div>
+    </div>
+    <!--BOX-->
+    <div class="w-right-contact-box">
+      <!--ICON-->
+      <i class="fa-solid fa-envelope"></i>
+      <!--TEXT-->
+      <div class="w-right-contact-box-text">
+        <span>Mail Us </span>
+        <strong>info@example.com</strong>
+    </div>
+  </div>
+  </div>
+</section><!--END-->
+
+<section id="team">
+  <!--HEADING-->
+  <div class="team-heading">
+    <h3>Meet Our Specialist</h3>
+    <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+  </div>
+  <!--CONTAINER-->
+  <div class="team-box-container">
+
+
+      <!-- Swiper -->
+      <div  class="swiper mySwiperteam">
+        <div class="swiper-wrapper">
+
+          <!--slide1-->
+          <div class="swiper-slide">
+            <!--BOX-->
+            <div class="team-box">
+              <!--IMG-->
+              <div class="team-img">
+                <img src="d4.png" alt="">
+              </div>
+              <!--text-->
+              <div class="team-text">
+                <strong>Dr. Paradox Alex</strong>
+                <span>Bone Specialist</span>
+              </div>
+            </div>
+          </div>
+
+        <!--slide1-->
+        <div class="swiper-slide">
+          <!--BOX-->
+          <div class="team-box">
+            <!--IMG-->
+            <div class="team-img">
+              <img src="d1.png" alt="">
+            </div>
+            <!--text-->
+            <div class="team-text">
+              <strong>Dr. Paradox Alex</strong>
+              <span>ENT Specialist</span>
+            </div>
+          </div>
+        </div>
+      <!--slide1-->
+      <div class="swiper-slide">
+        <!--BOX-->
+        <div class="team-box">
+          <!--IMG-->
+          <div class="team-img">
+            <img src="d3.png.png" alt="">
+          </div>
+          <!--text-->
+          <div class="team-text">
+            <strong>Dr. Paradox Alex</strong>
+            <span>Skin Specialist</span>
+          </div>
+        </div>
+      </div>
+    <!--slide1-->
+    <div class="swiper-slide">
+      <!--BOX-->
+      <div class="team-box">
+        <!--IMG-->
+        <div class="team-img">
+          <img src="d5.png" alt="">
+        </div>
+        <!--text-->
+        <div class="team-text">
+          <strong>Dr. Paradox Alex</strong>
+          <span>Dentist</span>
+        </div>
+      </div>
+    </div>
+    <!--slide1-->
+    <div class="swiper-slide">
+      <!--BOX-->
+      <div class="team-box">
+        <!--IMG-->
+        <div class="team-img">
+          <img src="d6.jpeg" alt="">
+        </div>
+        <!--text-->
+        <div class="team-text">
+          <strong>Dr. Paradox Alex</strong>
+          <span>Eye Specialist</span>
+        </div>
+      </div>
+    </div>
+
+        </div><!--WRAPPER END-->
+        <div class="swiper-pagination"></div>
+      </div><!--swiper end-->
+
+  </div><!--CONTAINER END-->
+</section><!--TEAM END-->
+
+<!--TESTIMONIALS-->
+<section id="testimonials">
+  <!--HEADING-->
+  <div class="testimonials-heading">
+    <h3>Our Patients Feedback About Us</h3>
+    <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+  </div>
+
+  <!--TESTIMONIALS CONTENT-->
+  <div class="testimonials-content">
+    <!--img-->
+    <div class="testimonials-img">
+      <img src="p1.png" alt="">
+    </div>
+
+    <div class="testimonials-box-container">
+
+      <div class="swiper mySwipertesti">
+        <div class="swiper-wrapper">
+          <!--SLIDE 1-->
+          <div class="swiper-slide">
+
+            <!--BOX-->
+            <div class="testimonials-box">
+              <!--PROFILE-->
+              <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                  <img src="p2.png" alt=""></div>
+                <!--text-->
+                <div class="t-profile-text">
+                  <strong>Shivam</strong>
+                  <span>From Chicago</span>
+                  <div class="t-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div><!--PROFILE END-->
+              <!--FEEDBACK-->
+              <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+            </div><!--BOX END-->
+
+          </div><!--SLIDE END-->
+
+          <!--SLIDE 1-->
+          <div class="swiper-slide">
+
+            <!--BOX-->
+            <div class="testimonials-box">
+              <!--PROFILE-->
+              <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                  <img src="p2.png" alt=""></div>
+                <!--text-->
+                <div class="t-profile-text">
+                  <strong>Shivam</strong>
+                  <span>From Chicago</span>
+                  <div class="t-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div><!--PROFILE END-->
+              <!--FEEDBACK-->
+              <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+            </div><!--BOX END-->
+
+          </div><!--SLIDE END-->
+
+          <!--SLIDE 1-->
+          <div class="swiper-slide">
+
+            <!--BOX-->
+            <div class="testimonials-box">
+              <!--PROFILE-->
+              <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                  <img src="p2.png" alt=""></div>
+                <!--text-->
+                <div class="t-profile-text">
+                  <strong>Shivam</strong>
+                  <span>From Chicago</span>
+                  <div class="t-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div><!--PROFILE END-->
+              <!--FEEDBACK-->
+              <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+            </div><!--BOX END-->
+
+          </div><!--SLIDE END-->
+
+          
+        <div class="swiper-pagination"></div>
+      </div><!--WRAPPER END-->
+      </div><!--SWIPER END-->
+
+      
+    </div><!--container end--> 
+</div><!--content end-->
+</section><!--TESTIMONIALS END-->
+
+<section id="subscribe">
+  <h3>Subscribe For New Updates From MindBody&Soul</h3>
+
+  <!--SUBSCRIBE BOX-->
+  <form class="subscribe-box">
+    <input type="email" placeholder="Example@score.com">
+    <button>Subscribe</button>
+  </form>
+</section>
+
+<footer >
+  <div class="footer-container">
+    <!--COMPANY BOX-->
+    <div class="footer-company-box">
+    <!--DETAILS-->
+    <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and friends.</p>
+    <!--social box-->
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+  <!--LINK-->
+  <div class="footer-link-box">
+    <strong>Main link's</strong>
+    <ul> 
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  </div>
+  <!--LINK-->
+  <div class="footer-link-box">
+    <strong>Main link's</strong>
+    <ul> 
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  </div>
+  <!--LINK-->
+  <div class="footer-link-box">
+    <strong>Main link's</strong>
+    <ul> 
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Made By Stuti Dhingra & Manya Jamwal</span>
+    <span>Copyright 2024 - MindBody&Soul</span>
+  </div>
+</footer>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+    /*SERVICES SLIDER*/
+   var swiper = new Swiper(".mySwiperservices", {
+     slidesPerView: 1,
+     spaceBetween: 10,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+     breakpoints: {
+       640: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+       },
+       768: {
+         slidesPerView: 4,
+         spaceBetween: 40,
+       },
+       1024: {
+         slidesPerView: 3,
+         spaceBetween: 20,
+       },
+     },
+   });
+
+   /*TEAM*/
+   var swiper = new Swiper(".mySwiperteam", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    /*testimonial*/
+
+  var swiper = new Swiper(".mySwipertesti", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  // Add this section for autoplay
+  autoplay: {
+    delay: 2500, // Delay in milliseconds between slides, for example 2500ms or 2.5s
+    disableOnInteraction: false, // Do not disable autoplay on user interactions
+  },
+  speed: 1000
+});
+ </script>
+<body ng-controller="LoginCtrl">
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="form-title text-center">
+                      <h4>Login</h4>
+                  </div>
+                  <div class="d-flex flex-column text-center">
+                      <form name="loginForm" novalidate ng-submit="login()">
+                          <div class="form-group">
+                              <input type="email" class="form-control" id="email1" placeholder="Your email address..." ng-model="user.email" required>
+                              <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.required" class="text-danger">Email is required.</span>
+                              <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.email" class="text-danger">Enter a valid email.</span>
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control" id="password1" placeholder="Your password..." ng-model="user.password" required ng-minlength="8">
+                              <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.required" class="text-danger">Password is required.</span>
+                              <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.minlength" class="text-danger">Password must be at least 8 characters long.</span>
+                          </div>
+                          <button type="submit" class="btn btn-info btn-block btn-round" ng-disabled="loginForm.$invalid">Login</button>
+                      </form>
+                  </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                  <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+  angular.module('loginApp', [])
+      .controller('LoginCtrl', ['$scope', function($scope) {
+          $scope.user = {};
+  
+          $scope.login = function() {
+              if ($scope.loginForm.$valid) {
+                  $('#loginModal').modal('hide');
+                  // Here you would typically handle the login logic, such as sending credentials to the server.
+                  console.log('Form is valid! Logging in...', $scope.user);
+              }
+          };
+      }]);
+  
+  $(document).ready(function() {
+      $('#loginModal').modal('show');
+  });
+  </script>
+</body>
+</html>
+
+</body>
+</html>
