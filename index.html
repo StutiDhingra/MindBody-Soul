@@ -669,42 +669,74 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 });
  </script>
 <body ng-controller="LoginCtrl">
-
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-              <div class="modal-header border-bottom-0">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                  </button>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false">Sign Up</a>
+            </li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+              <!-- Login Form -->
+              <div class="form-title text-center">
+                <h4>Login</h4>
               </div>
-              <div class="modal-body">
-                  <div class="form-title text-center">
-                      <h4>Login</h4>
+              <div class="d-flex flex-column text-center">
+                <form name="loginForm" novalidate ng-submit="login()">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1" placeholder="Your email address..." ng-model="user.email" required>
+                    <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.required" class="text-danger">Email is required.</span>
+                    <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.email" class="text-danger">Enter a valid email.</span>
                   </div>
-                  <div class="d-flex flex-column text-center">
-                      <form name="loginForm" novalidate ng-submit="login()">
-                          <div class="form-group">
-                              <input type="email" class="form-control" id="email1" placeholder="Your email address..." ng-model="user.email" required>
-                              <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.required" class="text-danger">Email is required.</span>
-                              <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.email" class="text-danger">Enter a valid email.</span>
-                          </div>
-                          <div class="form-group">
-                              <input type="password" class="form-control" id="password1" placeholder="Your password..." ng-model="user.password" required ng-minlength="8">
-                              <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.required" class="text-danger">Password is required.</span>
-                              <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.minlength" class="text-danger">Password must be at least 8 characters long.</span>
-                          </div>
-                          <button type="submit" class="btn btn-info btn-block btn-round" ng-disabled="loginForm.$invalid">Login</button>
-                      </form>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password..." ng-model="user.password" required ng-minlength="8">
+                    <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.required" class="text-danger">Password is required.</span>
+                    <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.minlength" class="text-danger">Password must be at least 8 characters long.</span>
                   </div>
+                  <button type="submit" class="btn btn-info btn-block btn-round" ng-disabled="loginForm.$invalid">Login</button>
+                </form>
               </div>
-              <div class="modal-footer d-flex justify-content-center">
-                  <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+            </div>
+            <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+              <!-- Signup Form -->
+              <div class="form-title text-center">
+                <h4>Sign Up</h4>
               </div>
+              <div class="d-flex flex-column text-center">
+                <form name="signupForm" novalidate ng-submit="signup()">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email2" placeholder="Your email address..." ng-model="newUser.email" required>
+                    <span ng-show="signupForm.email2.$dirty && signupForm.email2.$error.required" class="text-danger">Email is required.</span>
+                    <span ng-show="signupForm.email2.$dirty && signupForm.email2.$error.email" class="text-danger">Enter a valid email.</span>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password2" placeholder="Create a password..." ng-model="newUser.password" required ng-minlength="8">
+                    <span ng-show="signupForm.password2.$dirty && signupForm.password2.$error.required" class="text-danger">Password is required.</span>
+                    <span ng-show="signupForm.password2.$dirty && signupForm.password2.$error.minlength" class="text-danger">Password must be at least 8 characters long.</span>
+                  </div>
+                  <button type="submit" class="btn btn-info btn-block btn-round" ng-disabled="signupForm.$invalid">Sign Up</button>
+                </form>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+        
+        </div>
       </div>
+    </div>
   </div>
-  
   <!-- jQuery and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -713,12 +745,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   angular.module('loginApp', [])
       .controller('LoginCtrl', ['$scope', function($scope) {
           $scope.user = {};
+          $scope.newUser = {};
   
           $scope.login = function() {
               if ($scope.loginForm.$valid) {
                   $('#loginModal').modal('hide');
-                  // Here you would typically handle the login logic, such as sending credentials to the server.
                   console.log('Form is valid! Logging in...', $scope.user);
+              }
+          };
+  
+          $scope.signup = function() {
+              if ($scope.signupForm.$valid) {
+                  $('#loginModal').modal('hide');
+                  console.log('Form is valid! Signing up...', $scope.newUser);
               }
           };
       }]);
@@ -727,6 +766,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       $('#loginModal').modal('show');
   });
   </script>
+
 </body>
 </html>
 
