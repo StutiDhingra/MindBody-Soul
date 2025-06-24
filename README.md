@@ -53,15 +53,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> *(Include images if hosting them)*  
-> ![Home Page](screenshots/home.png)  
-> ![Therapy Section](screenshots/therapy.png)  
-> ![Doctor Booking](screenshots/booking.png)
-
----
-
 ## 🚀 How to Run Locally
 
 1. Clone the repository:
