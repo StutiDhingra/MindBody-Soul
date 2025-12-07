@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Medicine - MindBodySoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .medicine-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .medicine-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .medicine-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .medicine-img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .medicine-title {
+            font-size: 1.2rem;
+            color: #122853;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .medicine-price {
+            color: #014dd5;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #122853;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #014dd5;
+        }
+
+        .page-header {
+            background-color: #f5f7fb;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #122853;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu">
+            <li><a href="finddoc2.html">Find a Doctor</a></li>
+            <li><a href="index.html#our-services">Our Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="ambulance.html">Ambulance Tracker</a></li>
+            <li><a href="mentalhealth2.html">Mental Health</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="test.html">Test Scheduling</a></li>
+            <li><a href="subscription.html">Premium</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Online Medicine Store</h1>
+        <p>Order your medicines and get them delivered to your doorstep.</p>
+    </div>
+
+    <div class="medicine-container">
+        <!-- Mock Products -->
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Paracetamol" alt="Paracetamol" class="medicine-img">
+            <div class="medicine-title">Paracetamol 500mg</div>
+            <div class="medicine-price">$5.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Vitamin+C" alt="Vitamin C" class="medicine-img">
+            <div class="medicine-title">Vitamin C Supplements</div>
+            <div class="medicine-price">$12.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Cough+Syrup" alt="Cough Syrup" class="medicine-img">
+            <div class="medicine-title">Herbal Cough Syrup</div>
+            <div class="medicine-price">$8.50</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Pain+Relief" alt="Pain Relief" class="medicine-img">
+            <div class="medicine-title">Pain Relief Gel</div>
+            <div class="medicine-price">$7.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Thermometer" alt="Thermometer" class="medicine-img">
+            <div class="medicine-title">Digital Thermometer</div>
+            <div class="medicine-price">$25.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="medicine-card">
+            <img src="https://via.placeholder.com/150?text=Masks" alt="Masks" class="medicine-img">
+            <div class="medicine-title">N95 Masks (Pack of 5)</div>
+            <div class="medicine-price">$15.00</div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="text-align: center; padding: 20px; background-color: #f5f7fb;">
+            <span>Made By Stuti Dhingra & Manya Jamwal</span>
+            <br>
+            <span>Copyright 2024 - MindBody&Soul</span>
+        </div>
+    </footer>
+</body>
+
+</html>

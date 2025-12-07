@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Tracker - MindBodySoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .tracker-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 50px auto;
+            height: 600px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tracker-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+        }
+
+        .tracker-info h3 {
+            color: #122853;
+            margin-bottom: 10px;
+        }
+
+        .tracker-info p {
+            color: #535353;
+            margin-bottom: 5px;
+        }
+
+        .call-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #dd3f3f;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .page-header {
+            background-color: #f5f7fb;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #122853;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu">
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="index.html#our-services">Our Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="ambulance.html">Ambulance Tracker</a></li>
+            <li><a href="mentalhealth2.html">Mental Health</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="test.html">Test Scheduling</a></li>
+            <li><a href="subscription.html">Premium</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Live Ambulance Tracker</h1>
+        <p>Track the nearest ambulance in real-time.</p>
+    </div>
+
+    <div class="tracker-container">
+        <div id="map"></div>
+        <div class="tracker-info">
+            <h3>Ambulance #102</h3>
+            <p><strong>Driver:</strong> John Doe</p>
+            <p><strong>ETA:</strong> 5 mins</p>
+            <p><strong>Status:</strong> On the way</p>
+            <a href="tel:102" class="call-btn"><i class="fa-solid fa-phone"></i> Call Driver</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="text-align: center; padding: 20px; background-color: #f5f7fb;">
+            <span>Made By Stuti Dhingra & Manya Jamwal</span>
+            <br>
+            <span>Copyright 2024 - MindBody&Soul</span>
+        </div>
+    </footer>
+
+    <!-- Google Maps API Script (Replace YOUR_API_KEY with actual key) -->
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Default location (e.g., New York)
+            var lat = 40.7128;
+            var lng = -74.0060;
+
+            var map = L.map('map').setView([lat, lng], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var ambulanceIcon = L.icon({
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/2991/2991316.png', // Free ambulance icon
+                iconSize: [38, 38],
+                iconAnchor: [19, 38],
+                popupAnchor: [0, -30]
+            });
+
+            L.marker([lat, lng], { icon: ambulanceIcon }).addTo(map)
+                .bindPopup('Ambulance #102<br>Status: On the way')
+                .openPopup();
+        });
+    </script>
+</body>
+
+</html>

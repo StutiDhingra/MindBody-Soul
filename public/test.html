@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Test - MindBodySoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            width: 90%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #122853;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #014dd5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #003bb3;
+        }
+
+        .page-header {
+            background-color: #f5f7fb;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #122853;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu">
+            <li><a href="finddoc2.html">Find a Doctor</a></li>
+            <li><a href="index.html#our-services">Our Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="ambulance.html">Ambulance Tracker</a></li>
+            <li><a href="mentalhealth2.html">Mental Health</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="test.html">Test Scheduling</a></li>
+            <li><a href="subscription.html">Premium</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Schedule a Diagnostic Test</h1>
+        <p>Book your lab tests online and skip the queue.</p>
+    </div>
+
+    <div class="form-container">
+        <form id="testForm">
+            <div class="form-group">
+                <label for="testType">Select Test Type</label>
+                <select id="testType" name="testType" required>
+                    <option value="">-- Select Test --</option>
+                    <option value="blood_test">Complete Blood Count (CBC)</option>
+                    <option value="urine_test">Urine Analysis</option>
+                    <option value="lipid_profile">Lipid Profile</option>
+                    <option value="thyroid">Thyroid Function Test</option>
+                    <option value="diabetes">Diabetes Screening</option>
+                    <option value="covid">COVID-19 RT-PCR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Enter patient's full name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Home Collection Address (Optional)</label>
+                <textarea id="address" name="address" rows="3"
+                    placeholder="Enter address for home collection"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Book Test</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="text-align: center; padding: 20px; background-color: #f5f7fb;">
+            <span>Made By Stuti Dhingra & Manya Jamwal</span>
+            <br>
+            <span>Copyright 2024 - MindBody&Soul</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Test booking request submitted! We will contact you shortly to confirm.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindBodySoul</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--imorting font from google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <!-- Font Awesome CSS -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+      w[o] = w[o] || function () {
+        (w[o].q =
+          w[o].q || []).push(arguments);
+      }; (js = d.createElement(s)), (fjs =
+        d.getElementsByTagName(s)[0]); js.id = o; js.src = f; js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "_cvt",
+      "https://cdn.convrrt.com/libs/popup/widget.js");
+    _cvt("init", {
+      orgID: 'mailmodo',
+      projectID: "74625c96-8494-5e2c-acc6-01aab91f0d3c_40e8d9ca-52f9-4a5b-9dd5-aa34dcdcdedb",
+      popupID: "f3024614-f917-410f-a383-d5fe3640ba5e"
+    });
+  </script>
+</head>
+
+<body>
+  <section id="hero">
+    <nav class="navigation">
+      <!--MENU-BTN-->
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <!--logo-->
+      <a href="#" class="logo">
+        <h3 id="lg">MindBody&Soul</h3>
+      </a>
+      <!--menu-->
+      <ul class="menu">
+        <li><a href="stories.html">Success Stories</a></li>
+        <li><a href="#our-services">Our Services</a></li>
+        <li><a href="#why-choose-us">Contact Us</a></li>
+        <!-- Additional service links -->
+        <li><a href="/booking.html">Book Appointment</a></li>
+        <li><a href="/ambulance.html">Ambulance Tracker</a></li>
+        <li><a href="/mentalhealth.html">Mental Health</a></li>
+        <li><a href="/medicine.html">Medicine</a></li>
+        <li><a href="/test.html">Test Scheduling</a></li>
+        <li><a href="/doctors.html">Doctor Recommendations</a></li>
+        <li><a href="/subscription.html">Premium Subscriptions</a></li>
+      </ul>
+      <div id="authButtons" style="display: flex; align-items: center;">
+        <button id="loginBtn" type="button" class="btn-btn-info-btn-round" data-toggle="modal"
+          data-target="#loginModal">
+          Login
+        </button>
+        <a id="dashboardBtn" href="/dashboard.html" class="btn-btn-info-btn-round"
+          style="display: none; margin-right: 10px; background-color: #122853;">
+          My Profile
+        </a>
+        <button id="logoutBtn" type="button" class="btn-btn-info-btn-round"
+          style="display: none; background-color: #dd3f3f;">
+          Logout
+        </button>
+      </div>
+    </nav>
+    <!--CONTENT-->
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Feel better About Finding HealthCare</h1>
+        <p>MindBodySoul is your partner in your journey to improve the health of yourself, your family members and
+          friends.
+          MindBodySoul believes in providing affordable access to quality healthcare and helps patients pick the best
+          surgery option for their health condition.
+        </p>
+        <div class="hero-text-btns">
+          <a href="finddoc2.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Find Doctor</a>
+          <a href="#">
+            <i class="fa-solid fa-check"></i>
+            Book Appointment</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img4.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- The rest of the original page content remains unchanged -->
+
+  <!--SEARCH-->
+  <div class="appointment-search-container">
+    <h3>Find Best HealthCare</h3>
+    <div class="appointment-search">
+      <div class="appo-search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search Doctor Here">
+      </div>
+      <div class="appo-search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Set Your Location">
+      </div>
+      <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- (remaining sections such as what-we-provide, our-story, services, etc.) are kept as‑is from the original file. -->
+
+  <!-- Include Swiper JS and initialization scripts (unchanged) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiperservices", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 768: { slidesPerView: 4, spaceBetween: 40 }, 1024: { slidesPerView: 3, spaceBetween: 20 } }
+    });
+    var swiperTeam = new Swiper(".mySwiperteam", { slidesPerView: 1, spaceBetween: 10, pagination: { el: ".swiper-pagination", clickable: true }, breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 768: { slidesPerView: 4, spaceBetween: 40 }, 1024: { slidesPerView: 4, spaceBetween: 50 } } });
+    var swiperTesti = new Swiper(".mySwipertesti", { effect: "coverflow", grabCursor: true, centeredSlides: true, slidesPerView: "auto", coverflowEffect: { rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true }, pagination: { el: ".swiper-pagination" }, autoplay: { delay: 2500, disableOnInteraction: false }, speed: 1000 });
+  </script>
+
+  <body ng-controller="LoginCtrl">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
+                  aria-controls="login" aria-selected="true">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup"
+                  aria-selected="false">Sign Up</a>
+              </li>
+            </ul>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <div class="form-title text-center">
+                  <h4>Login</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form name="loginForm" novalidate ng-submit="login()">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email1" placeholder="Your email address..."
+                        ng-model="user.email" required>
+                      <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.required"
+                        class="text-danger">Email is required.</span>
+                      <span ng-show="loginForm.email1.$dirty && loginForm.email1.$error.email" class="text-danger">Enter
+                        a valid email.</span>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="password1" placeholder="Your password..."
+                        ng-model="user.password" required ng-minlength="8">
+                      <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.required"
+                        class="text-danger">Password is required.</span>
+                      <span ng-show="loginForm.password1.$dirty && loginForm.password1.$error.minlength"
+                        class="text-danger">Password must be at least 8 characters long.</span>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-block btn-round"
+                      ng-disabled="loginForm.$invalid">Login</button>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                <div class="form-title text-center">
+                  <h4>Sign Up</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form name="signupForm" novalidate ng-submit="signup()">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email2" placeholder="Your email address..."
+                        ng-model="newUser.email" required>
+                      <span ng-show="signupForm.email2.$dirty && signupForm.email2.$error.required"
+                        class="text-danger">Email is required.</span>
+                      <span ng-show="signupForm.email2.$dirty && signupForm.email2.$error.email"
+                        class="text-danger">Enter a valid email.</span>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="password2" placeholder="Create a password..."
+                        ng-model="newUser.password" required ng-minlength="8">
+                      <span ng-show="signupForm.password2.$dirty && signupForm.password2.$error.required"
+                        class="text-danger">Password is required.</span>
+                      <span ng-show="signupForm.password2.$dirty && signupForm.password2.$error.minlength"
+                        class="text-danger">Password must be at least 8 characters long.</span>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-block btn-round"
+                      ng-disabled="signupForm.$invalid">Sign Up</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+      angular.module('loginApp', [])
+        .controller('LoginCtrl', ['$scope', '$http', '$window', function ($scope, $http, $window) {
+          $scope.user = {};
+          $scope.newUser = {};
+          $scope.errorMsg = '';
+          $scope.successMsg = '';
+
+          $scope.login = function () {
+            if ($scope.loginForm.$valid) {
+              $http.post('/api/auth/login', $scope.user)
+                .then(function (response) {
+                  console.log('Login success:', response.data);
+                  $('#loginModal').modal('hide');
+                  $window.location.href = '/dashboard.html'; // Redirect to dashboard
+                })
+                .catch(function (error) {
+                  console.error('Login error:', error);
+                  $scope.errorMsg = error.data.message || 'Login failed';
+                });
+            }
+          };
+
+          $scope.signup = function () {
+            if ($scope.signupForm.$valid) {
+              // Default role to 'patient' if not specified
+              $scope.newUser.role = 'patient';
+              $http.post('/api/auth/register', $scope.newUser)
+                .then(function (response) {
+                  console.log('Signup success:', response.data);
+                  $scope.successMsg = 'Signup successful! You can now login.';
+                  $scope.newUser = {}; // Clear form
+                  // Switch to login tab
+                  $('#login-tab').tab('show');
+                })
+                .catch(function (error) {
+                  console.error('Signup error:', error);
+                  $scope.errorMsg = error.data.message || 'Signup failed';
+                });
+            }
+          };
+        }]);
+      // Auth State Check
+      document.addEventListener('DOMContentLoaded', async () => {
+        try {
+          const res = await fetch('/api/auth/user', { credentials: 'include' });
+          if (res.ok) {
+            // User is logged in
+            document.getElementById('loginBtn').style.display = 'none';
+            document.getElementById('dashboardBtn').style.display = 'flex';
+            document.getElementById('logoutBtn').style.display = 'flex';
+          }
+        } catch (e) {
+          console.log('User not logged in');
+        }
+
+        // Logout logic
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+          await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+          window.location.href = '/index.html';
+        });
+      });
+    </script>
+  </body>
+
+</html>

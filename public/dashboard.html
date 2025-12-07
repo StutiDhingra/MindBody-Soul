@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard – MindBody Soul</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MindBody<span>&amp;</span>Soul</div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/dashboard.html">Dashboard</a></li>
+            <li><a href="/booking.html">Book Appointment</a></li>
+            <li><a href="/ambulance.html">Ambulance Tracker</a></li>
+            <li><button id="logoutBtn" class="btn-primary">Logout</button></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Welcome, <span id="userName">User</span></h1>
+        <p>Manage your health services from one place.</p>
+    </section>
+    <script src="/js/auth.js"></script>
+    <script>
+        // Simple client‑side check for logged‑in user
+        document.addEventListener('DOMContentLoaded', async () => {
+            const res = await fetch('/api/auth/user', { credentials: 'include' }).catch(() => null);
+            if (res && res.ok) {
+                const data = await res.json();
+                document.getElementById('userName').textContent = data.name || 'User';
+            } else {
+                window.location.href = '/index.html';
+            }
+        });
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+            await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+
+</html>

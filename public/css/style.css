@@ -1,0 +1,120 @@
+/* public/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: hsl(210, 70%, 50%);
+  --primary-dark: hsl(210, 70%, 40%);
+  --gradient: linear-gradient(135deg, hsl(210, 70%, 55%), hsl(260, 70%, 55%));
+  --bg: #f5f7fa;
+  --text: #333;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--gradient);
+  color: #fff;
+  border-radius: var(--radius);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+nav .nav-links a:hover {
+  opacity: 0.8;
+}
+
+section.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--gradient);
+  color: #fff;
+  border-radius: var(--radius);
+  margin: 2rem;
+}
+
+section.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+section.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+footer.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--gradient);
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: var(--radius);
+}
+
+/* Card components */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  section.hero {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MindBodySoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .booking-container {
+            max-width: 800px;
+            width: 90%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #122853;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #014dd5;
+            background-color: #fff;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #014dd5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #003bb3;
+        }
+
+        .page-header {
+            background-color: #f5f7fb;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #122853;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu">
+            <li><a href="finddoc2.html">Find a Doctor</a></li>
+            <li><a href="index.html#our-services">Our Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="ambulance.html">Ambulance Tracker</a></li>
+            <li><a href="mentalhealth2.html">Mental Health</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="test.html">Test Scheduling</a></li>
+            <li><a href="subscription.html">Premium</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Book an Appointment</h1>
+        <p>Schedule a visit with our expert doctors.</p>
+    </div>
+
+    <div class="booking-container">
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Choose a Specialist --</option>
+                    <option value="dr_alex_bone">Dr. Paradox Alex (Bone Specialist)</option>
+                    <option value="dr_alex_ent">Dr. Paradox Alex (ENT Specialist)</option>
+                    <option value="dr_alex_skin">Dr. Paradox Alex (Skin Specialist)</option>
+                    <option value="dr_alex_dentist">Dr. Paradox Alex (Dentist)</option>
+                    <option value="dr_alex_eye">Dr. Paradox Alex (Eye Specialist)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Visit</label>
+                <textarea id="reason" name="reason" rows="4"
+                    placeholder="Briefly describe your symptoms or reason for visit"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Confirm Appointment</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="text-align: center; padding: 20px; background-color: #f5f7fb;">
+            <span>Made By Stuti Dhingra & Manya Jamwal</span>
+            <br>
+            <span>Copyright 2024 - MindBody&Soul</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Appointment booked successfully! You will receive a confirmation email shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

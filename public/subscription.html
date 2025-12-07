@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Subscriptions - MindBodySoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .pricing-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            border-color: #014dd5;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            color: #122853;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .plan-price {
+            font-size: 3rem;
+            color: #014dd5;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .plan-period {
+            color: #535353;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 40px;
+            flex-grow: 1;
+        }
+
+        .plan-features li {
+            margin-bottom: 15px;
+            color: #535353;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .plan-features li i {
+            color: #014dd5;
+            margin-right: 10px;
+        }
+
+        .subscribe-btn {
+            background-color: #122853;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #014dd5;
+        }
+
+        .popular {
+            border-color: #014dd5;
+            position: relative;
+        }
+
+        .popular::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #014dd5;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .page-header {
+            background-color: #f5f7fb;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #122853;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu">
+            <li><a href="finddoc2.html">Find a Doctor</a></li>
+            <li><a href="index.html#our-services">Our Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="ambulance.html">Ambulance Tracker</a></li>
+            <li><a href="mentalhealth2.html">Mental Health</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="test.html">Test Scheduling</a></li>
+            <li><a href="subscription.html">Premium</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Premium Plans</h1>
+        <p>Choose the best plan for your health needs.</p>
+    </div>
+
+    <div class="pricing-container">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <div class="plan-name">Basic</div>
+            <div class="plan-price">$0</div>
+            <div class="plan-period">Free Forever</div>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check"></i> Doctor Search</li>
+                <li><i class="fa-solid fa-check"></i> Appointment Booking</li>
+                <li><i class="fa-solid fa-check"></i> Basic Health Articles</li>
+                <li><i class="fa-solid fa-check"></i> Ambulance Tracker</li>
+            </ul>
+            <button class="subscribe-btn">Get Started</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card popular">
+            <div class="plan-name">Standard</div>
+            <div class="plan-price">$19</div>
+            <div class="plan-period">per month</div>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check"></i> All Basic Features</li>
+                <li><i class="fa-solid fa-check"></i> Priority Booking</li>
+                <li><i class="fa-solid fa-check"></i> 5% Discount on Medicines</li>
+                <li><i class="fa-solid fa-check"></i> 1 Free Online Consultation</li>
+            </ul>
+            <button class="subscribe-btn">Choose Standard</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <div class="plan-name">Premium</div>
+            <div class="plan-price">$49</div>
+            <div class="plan-period">per month</div>
+            <ul class="plan-features">
+                <li><i class="fa-solid fa-check"></i> All Standard Features</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Doctor Support</li>
+                <li><i class="fa-solid fa-check"></i> 15% Discount on Medicines</li>
+                <li><i class="fa-solid fa-check"></i> Free Home Sample Collection</li>
+                <li><i class="fa-solid fa-check"></i> Personalized Diet Plan</li>
+            </ul>
+            <button class="subscribe-btn">Choose Premium</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="text-align: center; padding: 20px; background-color: #f5f7fb;">
+            <span>Made By Stuti Dhingra & Manya Jamwal</span>
+            <br>
+            <span>Copyright 2024 - MindBody&Soul</span>
+        </div>
+    </footer>
+</body>
+
+</html>

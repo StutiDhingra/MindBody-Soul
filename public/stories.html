@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBody&Soul Reviews</title>
+    <!-- Use the same CSS as index for consistency if possible, or keep user's styles but neaten them -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Integrating global styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #B5C0D0;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-custom {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .review {
+            width: 300px;
+            background-color: #F1FADA;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .review h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .review h5 {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .custimg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .cust {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .reviews-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar from index (simplified) -->
+    <nav class="navigation"
+        style="background:#fff; padding: 10px 40px; display:flex; justify-content:flex-start; align-items:center;">
+        <a href="index.html" class="logo" style="text-decoration:none; color:#333; margin-right: 40px;">
+            <h3 id="lg">MindBody&Soul</h3>
+        </a>
+        <ul class="menu" style="list-style:none; display:flex; gap:20px;">
+            <li><a href="index.html" style="text-decoration:none; color:#333;">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-custom">
+        <div class="heading">
+            <h2>MindBody&Soul Reviews</h2>
+        </div>
+
+        <div class="reviews-wrapper">
+            <!-- Block 1 -->
+            <div class="review" id="r1">
+                <h3><i class="fa-solid fa-quote-left"></i><br>He is thoughtful and supportive. Glad I chose him.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Harold Whittle</span>
+                </h5>
+            </div>
+            <div class="review" id="r2">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Truly transformed my life! She is incredibly empathetic
+                    and skilled. I'm forever grateful.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Cassandra Duff</span>
+                </h5>
+            </div>
+            <div class="review" id="r3">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Emily is an amazing therapist. She is understanding and
+                    empathetic.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Weini Faloppa</span>
+                </h5>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="review" id="r4">
+                <h3><i class="fa-solid fa-quote-left"></i><br>I've been working with Amy for a few months now. I
+                    genuinely look forward to our sessions.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Elodie De-Souza</span>
+                </h5>
+            </div>
+            <div class="review" id="r5">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Helped me navigate through my toughest times with
+                    compassion and wisdom. Highly recommend.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Tom Broderick</span>
+                </h5>
+            </div>
+            <div class="review" id="r6">
+                <h3><i class="fa-solid fa-quote-left"></i><br>She is great.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Micheal Read</span>
+                </h5>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="review" id="r7">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Jack is great, he listens on a non judgmental way and
+                    responds appropriately.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Joshua Lenox</span>
+                </h5>
+            </div>
+            <div class="review" id="r8">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Saundra is an exceptional therapist with wonderful
+                    insight.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Mark Byatt</span></h5>
+            </div>
+            <div class="review" id="r9">
+                <h3><i class="fa-solid fa-quote-left"></i><br>Provided me with the tools and guidance to overcome my
+                    challenges.</h3>
+                <h5><img src="https://via.placeholder.com/65" class="custimg"><span class="cust">Antoinette
+                        Jackson</span></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
